@@ -1,0 +1,18 @@
+{
+
+  "description": "removes nonio login page and adds scroll",
+  "manifest_version": 2,
+  "name": "recordNonio",
+  "version": "2.0",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/borderify",
+  "icons": {
+    "48": "icons/nonio.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.record.pt/*","*://*.jn.pt/*","*://*.sic.pt/*","*://*.tvi.pt/*"],
+      "js": ["recordNonio.js"]
+    }
+  ]
+}
